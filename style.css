@@ -1,0 +1,507 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Gugi|Roboto|Sofia&display=swap');
+.navigation-first-bar{
+    
+    background-color:#cc94ff;
+}
+
+:root{
+    --light-gray:#2b3032a1;
+    --primary-color:#8a46d4;
+    --roboto:"Roboto",sans-serif;
+    --secondary-color:#9d47ff;
+    --gugi:"Gugi",cursive;
+    --text-color:white;
+    --sofia:"Sofia",cursive; 
+
+}
+
+.font-type{
+    font-family: var(--roboto);
+}
+
+.bg-round-edge{
+    background-color: var(--primary-color)!important;
+}
+.text-color{
+    color: var(--text-color);
+}
+.text-gugi{
+    font-family: var(--gugi);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+
+
+}
+
+header #site-title{
+    font-family: var(--sofia);
+    position: relative;
+    right: -50px;
+}
+
+.container .dropdown-toggle, .container .dropdown-item{
+
+    font-size: 0.73em;
+}
+
+.header-links a{
+    font-size: 0.93em;
+    text-decoration: none ;
+    color: white;
+    cursor: pointer;
+
+}
+
+ 
+.navbar-nav{
+    padding:0.8em 0em;
+
+}
+.navbar-nav .nav-link{
+    font-size: 0.9em;
+    color: var(--light-gray) !important ;
+    font-family: var(--gugi);
+    font-weight: bolder;
+
+}
+
+.navbar-nav .nav-item .nav-link{
+padding: 0 1.3em;
+}
+
+.sidebar-menu{
+    width:19%;
+    height:630px;
+    float: left;
+    z-index: 2;
+    font-size: 14px;
+    font-family: var(--gugi);
+    background-color: var(--primary-color);
+}
+
+.sidebar-menu ul{
+    margin-left: 10px;;
+}
+
+.sidebar-menu ul li{
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+.sidebar-menu ul li:hover{
+    color: black;
+}
+
+.sidebar-menu ul li ul {
+    display:none;
+    z-index: 10;
+    top:77px;
+}
+
+.sidebar-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    background:var(--primary-color);
+    margin-left: 16%;
+    position: fixed;
+    padding: 0 100px 10px 10px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+
+@media only screen and (max-width:980px){
+    .sidebar-menu{
+        width:34%;
+        z-index: 20;
+        top:133px;
+        position: fixed;
+        font-size:12px;
+    }
+}
+
+.slider{
+    width: 81%;
+    margin-left: 19%;
+    padding: 0 10px;
+
+}
+
+.carousel-inner {
+
+	height:630px;
+	
+	}
+.carousal{
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+
+}
+.carousel-indicators{
+    z-index: 1;
+}
+
+*.icon-black{
+    color: black;
+}
+
+
+
+#fav{
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.icon-wrapper{
+    position: relative;
+    float: left;
+}
+
+.badge{
+    background:var(--primary-color);
+    width: auto;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    right: 80px;
+    padding: 1px;
+    color: white;
+}
+#bd2{
+    background:var(--primary-color);
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px !important;
+    position: absolute;
+    top:8px;
+    right: 20px !important;
+    color: white;
+}
+
+
+  
+
+
+  .favourite-tab {
+      margin: 50px 0px;
+  }
+
+  .favourite-tab img{
+      width: 100%;
+      height: 250px;
+      transition: 1s;
+      cursor: pointer;
+  }
+
+  .favourite-tab img:hover{
+      transform: scale(1.1);
+  }
+
+  .title-box{
+      background-color: var(--primary-color);
+      height: 40px;
+      color: white;
+      width: 220px;
+      padding: 4px 10px;
+      margin-bottom: 30px;
+      display: flex;
+
+  }
+
+  .title-box h2{
+      font-family: var(--sofia);
+      font-size: 24px;
+      padding:0px 0 10px 25px;
+      display: flex;
+  }
+  .title-box::after{
+      content: " ";
+      border-top:40px solid #8a46d4;
+      border-right: 50px solid transparent;
+      position: absolute;
+      display: flex;
+      margin-top: -4px;
+      margin-left: 210px;
+       
+  }
+
+  .overlay-right{ 
+      display: block;
+      opacity: 0;
+      position: absolute;
+      top:10%;
+      margin-left: 0;
+      width: 70px;
+       
+
+  }
+  .overlay-right .fas ,.far{
+      cursor: pointer;
+      background-color: #fff;
+      color: black;
+      height: 35px;
+      width: 35px;
+      font-size: 20px;
+      padding: 7px;
+      margin-top: 5%;
+      margin-bottom: 5% ;
+
+  }
+
+  .overlay-right .btn-secondary{
+      background: none !important;
+      box-shadow: none !important; 
+      border: none !important ;
+  }
+
+  .dog-type:hover .overlay-right{
+      opacity: 1;
+      margin-left: 5%;
+      transition: 0.5s;;
+  }
+
+  .dog-rating  .fas {
+      margin-top: 15px;
+      font-size: 20px;
+      color: var(--primary-color);
+
+  }
+
+  .dog-rating h3{
+      font-size: 20px;
+      font-family: var(--gugi);
+      font-weight: bold;
+  }
+  .dog-rating h5{
+      font-size: 15px;
+      font-family: var(--gugi);
+      padding-bottom: 10px;
+  }
+
+  .new-arrivals{
+    margin: 50px 0px;
+
+  }
+
+  .new-arrivals img{
+      width: 100%;
+      height: 250px;
+      cursor: pointer;
+      transition: 1s;
+  }
+
+  .new-arrivals img:hover{
+      transform: scale(1.1);
+  }
+
+  .website-features{
+      margin: 60px 0;
+  }
+
+  .website-features img{
+      width: 20%;
+      background: white;
+  }
+
+  .feature-text{
+      margin-top: 10px;
+      float:right;
+      width: 80%;
+      padding-left: 20px;
+      
+  }
+
+  .feature-box{
+      padding-top: 20px;
+  }
+
+  .footer{
+      background:#000;
+      color: white;
+      margin-top: 50px;
+  }
+  .footer h1{
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 18px;
+  }
+
+  .foooter p{
+      font-size: 10px;
+  }
+
+  .copyright{
+      margin-bottom: -80px;
+      text-align: center;
+      font-size: 15px;
+      padding-bottom: 20px;
+        
+  }
+  .foooter hr{
+      margin-top: 10px;
+      background-color: #ccc;
+  }
+
+  .footer-image img{
+      width: 100%;
+  }
+
+  .product-details{
+      margin-top: 50px;
+    
+  }
+  .carousel-item active, .carousel-item  img{
+      height: 630px;
+
+  }
+
+  .product-title h2 {
+      font-size: 40px;
+      margin-left: 10px;
+      font-family: var(--gugi);
+      
+
+  }
+
+  .product-review {
+      display: flex;
+      margin-left: 10px;
+  }
+  .product-review .fas{
+      color: orange;
+      
+  }
+
+  .product-reviews {
+      display: flex;
+  }
+  
+  #review-text{
+      position: relative;
+      right:-25px;
+     
+      font-size: 12px;
+  }
+
+  #vertical-line{
+    position: relative;
+    right:-32px;
+  }
+
+  #add-review-text{
+    position: relative;
+    right:-35px;
+   
+    font-size: 12px;
+
+  }
+
+  .product-review2 {
+     margin-left: 10px;
+  }
+  #price{
+      font-weight: bold;
+      color:var(--primary-color);
+  }
+  #review2{
+    color:white;
+    background-color: var(--primary-color);
+}
+.overview h6{
+    font-weight: bold;
+}
+
+.quantity-portion{
+    margin-top: 10px;
+}
+.quantity-portion h6{
+    font-weight: bold;
+
+}
+
+.boxes{
+    display: flex;
+    
+}
+#num{
+    margin-right: 10px;
+}
+
+#btn-buy{
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+.options{
+    margin-top:20px;
+    display: flex;
+}
+
+.options >div{
+    margin-right: 25px;
+}
+
+#opt{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    right: -3px;
+    font-size: 12px;
+}
+
+ul#allmylist{
+    list-style: none;
+    padding: 0;
+    
+}
+.icons{
+    margin-top: 10px;
+}
+
+ul#allmylist li{
+    display: inline;
+    padding-right: 2px;
+    
+}
+
+.product-topic h2 {
+    overflow: hidden;
+    font-family: var(--gugi);
+    color: var(--primary-color);
+}
+
+.product-topic h2:after {
+    content:"";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid black;
+}
+.animal-images{
+    margin-top: 20px;
+}
+
+.animal-images img{
+    width: 100%;
+    height:250px;
+}
